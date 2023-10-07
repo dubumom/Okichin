@@ -1,0 +1,301 @@
+ @media screen and (max-width:767px) {
+  header {
+    width:100%;
+    height: 40px;
+  }
+  .h_top {
+    width: 100%;
+  }
+  .h_top h1 {
+    margin:0 auto;
+  }
+  .h_top h1> a> img {
+    width: 150px;
+  }
+  .lnb {display:none;}
+  .right_icon {
+    position:absolute;
+    right:10px;
+    top:25px;
+    padding-right:20px
+  }
+  .right_icon a {padding: 2px;}
+  .right_icon a> img {width: 25px;}
+  .right_icon a span {display:none;}
+  .right_icon i.fa-search{
+    display: block;
+    padding-top:7px;
+    font-size: 1.3rem;
+    color:#fff;
+  }
+  label.fa-bars {
+    display:block;
+    position:absolute;
+    left: 20px;
+    top:25px;
+    font-size: 1.6rem;
+    padding: 6px;
+    color:#fff;
+  }
+  
+  .swiper-slide > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* 메인슬라이드 서식 */
+  .swiper-container {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+  }
+  main .swiper-slide {
+    position: relative;
+  }
+  .banner .swiper-slide .p_box {
+    width: 100%; height: 46%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0; bottom: 0;
+    transform: translateY(40px);
+  }
+  .banner .swiper-slide a h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+  }
+  .banner .swiper-slide a h3> small {
+    display: block;
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+  }
+  .p_box p {
+    font-size: 1.8rem;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+  }
+  .page01 {
+    transform: translateX(-80px);
+  }
+  .swiper-button-prev {display: none;}
+  .swiper-button-next {display: none;}
+  a.btn {display: none;}
+
+  /* 인기 레시피 서식 */
+
+  .famous {
+    position: relative;
+  }
+  .f_wrap {
+    background: #fff;
+    width: 50%;
+    height: 400px;
+    position: relative;
+    z-index: 10;
+
+  }
+  .f_shadow {
+    width: 100%;
+    height: 100%;
+    background: #EAE6E6;
+    border-radius: 0 0 50% 0 ;
+  }
+  .f_name {
+    border-right: 3px solid #CE010E;
+    border-bottom: 3px solid #CE010E;
+    border-radius: 0 0 50% 0 ;
+    background: #fff;
+    width: 100%;
+    height: 90%;
+    position: relative; top:-400px;
+
+  }
+  .f_name h3 {
+    color: #CE010E;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  .f_name h3> small {
+    display: block;
+    font-size: 1rem;
+  }
+  .f_name p {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  .more {
+    display: block;
+
+    margin-top: 20px;
+  }
+
+  .f_name2 {
+    position: absolute; left:80px; top: 30px;
+  }
+
+  /* 인기 레시피 슬라이드 구문 */
+  .mySwiper2 {
+    position: absolute; left: 120px; top: 0;
+    width: 85%; height: 100%;
+    overflow: hidden;
+  }
+  .mySwiper2 .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .mySwiper2 .swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mySwiper2 .swiper-slide img {
+    display: block;
+    width: 200px;
+    object-fit: cover;
+  }
+  .mySwiper2 .swiper-slide h3 {
+    color: #CE010E;
+    line-height: 60px;
+    font-size: 0.9rem;
+  }
+  .mySwiper2 .swiper-slide p {
+    font-size: 0.6rem;
+    line-height: 20px;
+  }
+  .swiper-pagination-bullet{
+    background: #000;
+    position: relative; left: 20%;
+    /* display: none; */
+  }
+
+  /* 구매하기 서식 */
+  .buying {
+    height: 500px;
+    /* margin: 70px 0; */
+    margin-top: 70px;
+    position: relative;
+  }
+  .product_wrap {
+    float: left;
+    margin-left: 5%;
+    position: absolute; bottom: 110px;
+  }
+  .product_wrap ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 20px;
+  }
+  .product_wrap ul li {
+    text-align: center;   
+    font-size: 0.6rem;
+  }
+  .product_wrap li img {
+    display: block;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  .product_wrap li:nth-child(2) img {
+    margin-left: 13px;
+  }
+  .product_wrap li:nth-child(3) img {
+    object-fit: contain;
+    width: 40px;
+    transform: translateY(30px);
+    /* height: 148px; */
+  }
+  .product_wrap li:last-child img {
+    width: 90px;
+  }
+  .product_wrap ul + a {
+    width: 200px;
+    display: inline-block;
+    margin: 20px 15%;
+    padding: 10px 10px; 
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #CE010E;
+    font-weight: bold;
+    color: #2E5902;
+    font-size: 0.8rem;
+  }
+
+  .buy_wrap {
+    float: right;
+    width: 50%; height: 350px;
+    position: relative;
+  }
+  .buy_shadow {
+    width: 83%;
+    height: 100%;
+    background: #9c9a9a;
+    border-radius: 50% 0 0 0; 
+    position: absolute; right: 1px;
+  }
+  .buy_name {
+    border-left: 3px solid #CE010E;
+    border-top: 3px solid #CE010E;
+    background: rgba(253, 253, 243, 0.89);
+    border-radius: 50% 0 0 0; 
+    width: 88%;
+    height: 100%;
+    position: absolute; right: 0px; bottom: 0;
+  }
+  .buy_name2 h3 {
+    color: #CE010E;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  .buy_name2 h3> small {
+    display: block;
+    font-size: 1rem;
+  }
+  .buy_name2> p {
+    font-size: 1rem;
+    line-height: 0.5rem;
+  }
+  .buy_name2 {
+    position: absolute; right: 10%; bottom: 0;
+  }
+  .buy_name a {
+    position: absolute; right: 10%; bottom: 10px;
+    color: #CE010E;
+    font-weight: bold;
+  }
+  .buy_name a img {
+    display: block;
+    width: 30px;
+    background: #CE010E;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+  }
+  .buy_name a img:hover {
+    transform: rotate(0deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
