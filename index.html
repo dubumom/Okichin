@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>'오'키친</title>
+
+    <!-- 이미지 슬라이드 -->
+    <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+    <script src="./js/swiper.js"></script>
+
+    <!-- 파피콘 -->
+    <link rel="icon" href="./image/favicon.ico">
+
+    <!-- 초기화 -->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <!-- 기본서식 (폰트, 색상 등)-->
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <!-- 공통서식 -->
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <!-- pc해상도 서식 -->
+    <link rel="stylesheet" type="text/css" href="./css/pc.css">
+    <!-- tablet해상도 서식 -->
+    <link rel="stylesheet" type="text/css" href="./css/tablet.css">
+    <!-- mobile해상도 서식 -->
+    <link rel="stylesheet" type="text/css" href="./css/moblie.css">
+    <!-- 아이콘 폰트 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 추천레시피 슬라이드 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+</head>
+<body>
+  <!-- 체크박스 토글 -->
+  <!-- <form name="검색" method="post" action="search.php"></form> -->
+  <input type="checkbox" id="toggle">
+
+  <!-- header top -->
+  <header>
+    <div class="h_top">
+      <h1>
+        <a href="index.html" title="상단로고 바로가기">
+          <img src="./logo/logo.png" alt="상단로고">
+        </a>
+      </h1>
+
+      <!-- 네비게이션 -->
+      <nav class="lnb">
+        <ul>
+          <li><a href="catagory.html">카테고리</a></li>
+          <li><a href="hot.html">인기 레시피</a></li>
+          <li><a href="Recommend.html">추천 레시피</a></li>
+          <li><a href="Measurement.html">계량 팁</a></li>
+      </ul>
+    </nav>
+
+      <!-- 오른쪽 링크들 -->
+      <ul class="right_icon">
+        <li><a href="#" title="오뚜기몰 바로가기"><img src="./icon/mall.png" alt=""><span>오뚜기 몰</span></a></li>
+        <li><a href="#" title="최근본페이지 바로가기"><img src="./icon/recent_page.png" alt=""><span>최근본 페이지</span></a></li>
+        <li><i class="fas fa-search"></i></li>
+      </ul>
+
+      <!-- h_nav -->
+      <div class="h_bottom">
+        <label for="toggle" class="class_btn">
+          <i class="fas fa-times"></i>
+        </label>
+        <nav class="gnb">
+          <ul>
+            <li>
+              <a href="#" title="카테고리">카테고리
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <ul class="sub">
+                <li><a href="#" title="">종류</a></li>
+                <li><a href="#" title="">재료</a></li>
+                <li><a href="#" title="">방법</a></li>
+                <li><a href="#" title="">테마</a></li>
+                <li><a href="#" title="">기념일</a></li>
+                <li><a href="#" title="">도구</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" title="">인기레시피
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <ul class="sub">
+                <li><a href="#" title=""> 인기레시피</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" title="">추천레시피
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <ul class="sub">
+                <li><a href="#" title=""> 추천레시피</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" title="">계량팁
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <ul class="sub">
+                <li><a href="#" title=""> 계량팁</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" title="">함께 만들어가는 오뚜기
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <ul class="sub">
+                <li><a href="#" title=""> 명예의 전당</a></li>
+                <li><a href="#" title=""> 역대 레시피</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> 
+      <!-- 전체메뉴 아이콘 -->
+      <label class="fas fa-bars" for="toggle"></label>
+      <!-- 검색 버튼 -->
+      <i class="fas fa-search"></i>
+  </header>
+
+  <!-- main 서식 -->
+  <main>
+    <!-- 메인 슬라이드 서식 -->
+    <div class='swiper-container banner'>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" title="">
+            <img src="./image/main_visual01.jpg" alt="">
+            <div class="p_box">
+              <h3 > 
+                <small>영양듬뿍 우리가족 한끼</small>
+                야채 돌솥 비빔밥
+              </h3>
+              <p><span>#돌솥밥</span> <span>#찜밥</span> </p>
+              <a href="#" class="btn">레시피보기 <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" title="">
+            <img src="./image/main_visual02.jpg" alt="">
+            <div class="p_box">
+              <h3 class="color_w"> 
+                <small>뜨끈뜨끈 추운날을 녹여주는</small>
+                한끼 든든 만둣국
+              </h3>
+              <p class="color_w"><span>#오뚜기 만두</span> <span>#간편식</span> </p>
+              <a href="#" class="btn">레시피보기 <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" title="">
+            <img src="./image/main_visual03.jpg" alt="">
+            <div class="p_box">
+              <h3 class="color_w"> 
+                <small>집에서 즐기는 이색요리</small>
+                Ege in Hell
+              </h3>
+              <p class="color_w"><span>#돌솥밥</span> <span>#찜밥</span> </p>
+              <a href="#" class="btn">레시피보기 <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" title="">
+            <img src="./image/main_visual04.jpg" alt="">
+            <div class="p_box">
+              <h3 class="color_w" > 
+                <small>가수 성시경이 개발한</small>
+                순두부 열라면
+              </h3>
+              <p class="color_w"><span>#핫한 라면</span> <span>#라면의 발견</span> </p>
+              <a href="#" class="btn">레시피보기 <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" title="">
+            <img src="./image/main_visual05.jpg" alt="">
+            <div class="p_box ">
+              <h3 > 
+                <small>향식료의 매력에 푹 빠지고 싶다면?</small>
+                라이브러리H
+              </h3>
+              <p>허브스파 전문 도서관 </p>
+              <a href="#" class="btn">이용법 보기 <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </a>
+      </div>
+    </div>
+      <div class="swiper-pagination page01"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+  </div>
+
+    <!-- 인기 레시피 -->
+    <section class="famous">
+      <h2 class="hidden">인기레시피</h2>
+      <div class="f_wrap">
+        <div class="f_shadow"></div>
+          <div class="f_name">
+            <div class="f_name2">
+              <h3 > 
+                <small>#Famous</small>
+                인기 레시피
+              </h3>
+              <p>사람들이 가장 좋아하는 인기 레시피만 골라 드립니다.<br>
+                오뚜기 제품과 함께 행복한 식탁을 경험하세요. </p>
+              <a href="#" class="more">more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+      </div>
+
+      <!-- 인기 레시피 슬라이드 구문 -->
+        <div class="swiper-container mySwiper2" >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1053" title="">
+                <img src="./image/Famous1.jpg" alt="">
+                <h3>애그마요 샌드위치</h3>
+                <p>애그마요 필링을 활용한 간단한 샌드위치 레시피</p>
+                <p><span>#피크닉</span><span> #간식</span><span> #나들이</span></p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="">
+                <img src="./image/Famous2.jpg" alt="">
+                <h3>완자 꼬치</h3>
+                <p>굴림만두를 활용한 꼬치 레시피</p>
+                <p><span>#굴림만두</span><span> #캠핑</span><span> #간장소스</span></p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1062" title="">
+                <img src="./image/Famous3.jpg" alt="">
+                <h3>우엉 조림</h3>
+                <p>밥도둑, 자꾸자꾸 손이가는 달콤한 우엉조림</p>
+                <p><span>#밑반찬</span><span> #벌꿀</span><span> #밥도둑</span></p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1364" title="">
+                <img src="./image/Famous5.jpg" alt="">
+                <h3>딸기 케이크</h3>
+                <p>집에서도 만드는 맛있는 케익 레시피</p>
+                <p><span>#제철딸기</span><span> #핫케이크믹스</span><span> #크리스마스</span></p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1080" title="">
+                <img src="./image/Famous4.jpg" alt="">
+                <h3>콘치즈</h3>
+                <p>맥주가 땡기는 날 간단하지만 퀄리티 있는 콘치즈</p>
+                <p><span>#치즈듬뿍</span><span> #골드마요네즈</span><span> #스위트콘</span></p>
+              </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+
+    <!-- 구매하기 구문 -->
+    <section class="buying">
+      <h2 class="hidden">구매하기</h2>
+      <div class="product_wrap">
+        <ul>
+          <li><img src="./image/garlic.png" alt="">갈릭 아이올리</li>
+          <li><img src="./image/Mayo.png" alt="">고소한 골드 마요네즈</li>
+          <li><img src="./image/Mustard.png" alt="">허니 머스타드</li>
+          <li><img src="./image/Butter.png" alt="">버터 후레시</li>
+        </ul>
+        <a href="https://www.ottogimall.co.kr/front/main">제품 구매하기</a>
+      </div>
+
+      <div class="buy_wrap">
+        <div class="buy_shadow"></div>
+          <div class="buy_name">
+            <div class="buy_name2">
+              <h3 > 
+                <small>#Buying</small>
+                관련 제품 구매하기
+              </h3>
+              <p>더 많은 오뚜기 제품을 '오뚜기' 몰에서 확인하세요 </p>
+            </div>
+            <a href="https://www.ottogimall.co.kr/front/main" ><img src="./icon/mall.png" alt=""></a>
+          </div>
+      </div>
+    </section>
+
+    <!-- 추천레시피 구문 -->
+
+    <section class="recommend">
+      <h2><span>추천 레시피</span></h2>
+      <p>오뚜기가 제안하는 레시피로 최고의 순간을 만들어 보세요.</p>
+      <div class="carousel_wrap">
+        <div class="carousel">
+          <a class="carousel-item" href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1091">
+            <div class="card">
+              <div class="img-area"><img src="./image/Recommend1.jpg" alt=""></div>
+              <div class="main-text">
+                <h2>한라산 오므라이스 </h2>
+                <p>#오뚜기 케첩과 함께 먹으면 더 맛있는 요리</p>
+              </div>
+            </div>
+          </a>
+          <a class="carousel-item" href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1092">
+            <div class="card">
+              <div class="img-area"><img src="./image/Recommend2.jpg" alt=""></div>
+              <div class="main-text">
+                <h2>햄마요 덮밥</h2>
+                <p>#배고픈 우리아이를 위해 뚝딱 차려내는 한끼</p>
+              </div>
+            </div>
+          </a>
+          <a class="carousel-item" href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1184">
+            <div class="card">
+              <div class="img-area"><img src="./image/Recommend3.jpg" alt=""></div>
+              <div class="main-text">
+                <h2>봄나물 된장 덮밥</h2>
+                <p>#봄에만 느낄 수 있는 특별한 봄나물 버섯 요리</p>
+              </div>
+            </div>
+          </a>
+          <a class="carousel-item" href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1064">
+            <div class="card">
+              <div class="img-area"><img src="./image/Recommend4.jpg" alt=""></div>
+              <div class="main-text">
+                <h2>육개장 칼국수</h2>
+                <p>#오뚜기 즉석 식품을 활용한 이색 레시피</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 쉐프의 팁 구문 -->
+    <section class="tip">
+      <h2><span>쉐프의 Tip</span></h2>
+      <p>오뚜기 간편식이 근사한 요리가 되는 팁을 공개합니다.</p>
+
+      <ul class="tip_wrap">
+        <li>
+          <a href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1195">
+            <img src="./image/tip1.jpg" alt="돈까스김치나베라면">
+            <h3>Tip 라면에 넣으면 맛있는 한 수</h3>
+            <p>매일 먹던 라면이 질린다면 돈까스를 넣어보세요!<br>
+              집에서 즐기는 나만의 레스토랑 음식이 완성된답니다. </p>
+              <div class="more_btn">Tip 더보기 <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </li>
+        <li>
+          <a href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1351">
+            <img src="./image/tip2.jpg" alt="열라면투움바">
+            <h3>Tip 스파게티에 넣으면 고급스러운 신의 한 수</h3>
+            <p>쉐프들이 자주 쓰는 비장의 무기를 공개합니다.<br>
+              매일 먹는 스파게티에 ‘파마산 치즈 가루’를 넣어보세요. </p>
+              <div class="more_btn">Tip 더보기 <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </li>
+        <li>
+          <a href="https://ottogi.okitchen.co.kr/category/detail.asp?idx=1087">
+            <img src="./image/tip3.jpg" alt="토마토냉파스타">
+            <h3>Tip 색다른 파스타를 즐기는 신의 한 수</h3>
+            <p>입안에 펼쳐지는 황홀함!<br>
+              여러종류의 파스타를 넣어  다양한 식감을 느껴보세요.</p>
+              <div class="more_btn">Tip 더보기 <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 함께만들어가는 오뚜기 구문-->
+
+    <section class="together">
+      <h2><span>함께 만들어가는 오뚜기</span></h2>
+      <p>오뚜기 소비자들의 특별한 레시피<br>매달 오뚜기가 선정하는 베스트 TOP3 지금 공개합니다.</p>
+
+      <div class="together_list">
+        <div class="gold">
+          <a href="#" title="">
+            <img src="./image/Together1.jpg" alt="1등">
+            <p><strong>차돌 된장 찌게</strong>
+            ID:우리집 창살 쇠창살<br>베스트 선정 이유: 모두가 쉽게 만들 수 있는 레시피</p>
+          </a>
+        </div>
+        <div class="rigth_wrap">
+          <div class="silver">
+            <a href="#" title="">
+              <img src="./image/Together2.jpg" alt="2등">
+              <p><strong>초콜릿 피자</strong>
+                ID:우리아들 짱구<br>베스트 선정 이유: 남은 재료를 활용한 고급스러운 디저트 레시피</p>
+            </a>
+          </div>
+          <div class="blond">
+            <a href="#" title="">
+              <img src="./image/Together3.jpg" alt="3등">
+              <p><strong>바나나 치아버터</strong>
+                ID:시집살이 그만!<br>베스트 선정 이유: 모두가 쉽게 만들 수 있는 레시피</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer 서식 -->
+  <footer>
+    <div class="footer_top">
+      <h1>
+        <a href="index.html" title="하단로고 바로가기">
+          <img src="./logo/logo2.png" alt="하단로고">
+        </a>
+      </h1>
+      <div class="f_center">
+        <nav>
+          <ul class="f_nav">
+            <li><a href="#" title="카테고리">카테고리</a></li>
+            <li><a href="#" title="인기레시피">인기레시피</a></li>
+            <li><a href="#" title="추천레시피">추천레시피</a></li>
+            <li><a href="#" title="계량팁">계량팁</a></li>
+          </ul>
+        </nav>
+        <address>
+          <p>(주)오뚜기|사업자등록번호 : 000-00-0000|대표이사 황00</p>
+          <p>주소 (14060) 경기도 안양시 동안구 흥안대로 405 (평촌동 160)</p>
+          <p>오뚜기 고객상담실 : 000-000-000</p>
+          <p>오뚜기라면 고객상담실 : 000-000-000 (월~금 08:30~17:00)</p>
+        </address>
+      </div>
+      <div class="f_site">
+        <select name="site" id="f_site">
+          <option value="https://ottogi.okitchen.co.kr/main/main.asp">family site</option>
+          <option value="http://www.ottogi.co.kr/">(주)오뚜기</option>
+          <option value="https://www.ottogimall.co.kr/">오뚜기몰</option>
+          <option value="http://ottogifdn.org/main/main.asp">오뚜기함태호재단</option>
+        </select>
+        <ul class="f_sns">
+          <li><a href="" title=""><img src="./icon/instagram.png" alt="https://www.instagram.com/ottogi_daily/"><span>인스타그램</span></a></li>
+          <li><a href="https://www.youtube.com/@yonjiham" title=""><img src="./icon/youtubu.png" alt=""><span>유튜브</span></a></li>
+          <li><a href="https://www.facebook.com/Ottogitoday" title=""><img src="./icon/facebook.png" alt=""><span>페이스북</span></a></li>
+          <li><a href="https://blog.naver.com/ottogitoday1" title=""><img src="./icon/blog.png" alt=""><span>블로그</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">Copyright &copy; OTTOGI CORPORATION.,Ltd All Rights Reserved.</p>
+  </footer>
+
+<!-- 메인 슬라이드 스크립트-->
+<script>
+  var swiper = new Swiper('.banner', {
+    spaceBetween:0, //이미지 사이 여백
+    centeredSlides:true,
+    autoplay:{
+      delay:2500,
+      disableOnInteraction:false,
+    },
+    pagination:{
+      el:'.swiper-pagination',
+      clickable:true,
+    },
+    navigation:{
+      nextEl:'.swiper-button-next',
+      prevEl:'.swiper-button-prev'
+    },
+  });
+
+  var swiper = new Swiper('.mySwiper2', {
+    slidesPerView: 4,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+  });
+</script>
+<!--  추천레시피 스크립트 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+
+    // $('.carousel a').eq(2).hide();
+  });
+</script>
+
+
+</body>
+</html>
